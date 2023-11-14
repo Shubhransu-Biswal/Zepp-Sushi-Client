@@ -1,12 +1,8 @@
 import Input from "../../UI/Input";
 import style from "./MealItemForm.module.css";
 import { useRef, useState } from "react";
-import { useContext } from "react";
-import CartContext from "../../Store/cart-context";
 
 const MealItemForm = (props) => {
-  const ctx = useContext(CartContext);
-
   const [amountIsValid, setAmountIsValid] = useState(true);
   const amountInputRef = useRef();
   const submitHandler = (e) => {
