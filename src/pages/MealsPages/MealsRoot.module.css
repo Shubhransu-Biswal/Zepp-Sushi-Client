@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+/* basic important styles */
+* {
+  font-family: "Baloo 2", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+/* ------------------------- ------ */
+.orderItemsSection {
+  width: 100%;
+  background: linear-gradient(
+      217deg,
+      rgba(198, 40, 60, 0.8),
+      rgba(0, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(198, 40, 123, 0.8), rgba(0, 0, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(198, 40, 92, 0.8), rgba(0, 0, 0, 0) 70.71%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Navigating different menus */
+.mealNavigation {
+  width: 100%;
+  overflow: visible;
+}
+.mealNavigation ul {
+  overflow: visible;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+}
+.mealNavigation li {
+  overflow: visible;
+  list-style: none;
+}
+.mealNavigation a {
+  text-decoration: none;
+  margin-left: 1vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fffdff;
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  padding: 0.75rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0.3rem 0.2rem 0.5rem 0 black;
+}
+
+.mealNavigation a.navlinkActive {
+  background-color: rgba(198, 40, 60, 1);
+}
+
+.backToHome {
+  overflow: visible;
+  height: 6rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 1rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backToHome a {
+  box-shadow: 0.3rem 0.2rem 0.5rem 0 black;
+
+  border-radius: 1.2rem;
+
+  padding: 0 1rem 0 0;
+  background-color: rgba(190, 58, 76, 0.8);
+  text-decoration: none;
+  color: #fffdff;
+  text-shadow: 1rem 1rem 0.8rem black;
+  transition: all 0.4s;
+}
+
+.backToHome a:hover {
+  text-shadow: 0.5rem 0.5rem 0.6rem black;
+}
+
+/* media queries for font */
+@media (max-width: 1100px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 35%;
+  }
+}

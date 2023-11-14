@@ -1,0 +1,400 @@
+/* homepage */
+.homepage {
+  color: #fffdff;
+  background: linear-gradient(
+      217deg,
+      rgba(198, 40, 60, 0.8),
+      rgba(0, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(198, 40, 123, 0.8), rgba(0, 0, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(198, 40, 92, 0.8), rgba(0, 0, 0, 0) 70.71%);
+  height: auto;
+}
+
+/* order */
+.order {
+  margin-top: 22vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2.6rem;
+}
+.cards-container {
+  width: 100%;
+  margin-top: 2.6rem;
+  border-radius: 1.6rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cards-container .card {
+  overflow: hidden;
+  color: #fffdff;
+  cursor: pointer;
+  margin: 1rem;
+  width: 30rem;
+  height: 30rem;
+  background-color: rgba(198, 40, 92, 0.8);
+
+  border-radius: 1.5rem;
+  position: relative;
+}
+.sushiImgContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.sushiImgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(2);
+}
+.card .sushiDescription {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.5s;
+  bottom: -80%;
+}
+.sushiDescription h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.sushiDescription p {
+  overflow: hidden;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  padding-inline: 1rem;
+}
+.card:hover .sushiImgContainer {
+  transform: translateY(-30%);
+}
+.card:hover .sushiDescription {
+  transform: translateY(-40%);
+}
+
+/* about section */
+.about {
+  width: 100%;
+  margin-top: 21vh;
+  padding: 0 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fffdff;
+}
+.about h3 {
+  font-size: 4rem;
+}
+.about-description {
+  font-size: 2rem;
+  max-width: 70%;
+}
+.about-description p:nth-child(2) {
+  margin-block: 2rem;
+}
+
+.achievment {
+  background-color: rgba(198, 40, 92, 0.8);
+  width: 80%;
+  height: 20rem;
+  border-radius: 1.5rem;
+  margin-top: 0.5rem;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.achievment-description1 {
+  font-size: 2rem;
+  max-width: 70%;
+  text-align: left;
+}
+.achievment-description2 {
+  font-size: 2rem;
+  max-width: 70%;
+  margin-left: 0%;
+  text-align: left;
+}
+
+.achievment-gif1 {
+  background-color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: -7%;
+  width: 30%;
+  height: 100%;
+  clip-path: circle(28% at 50% 50%);
+}
+.achievment-gif1 img {
+  position: relative;
+  top: 10%;
+}
+.achievment-gif2 {
+  background-color: #d2322c;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: -7%;
+  width: 30%;
+  height: 100%;
+  clip-path: circle(28% at 50% 50%);
+}
+.achievment-gif1 img,
+.achievment-gif2 img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: contain; */
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+/* Contact page */
+.contact {
+  overflow: visible;
+  margin-top: 35vh;
+  width: 100%;
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-color: black;
+  padding-block: 5rem;
+  position: relative;
+}
+.contact h3 {
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.contact .form-container {
+  overflow: hidden;
+  width: 50%;
+  position: absolute;
+  top: -14%;
+  /* background-color: red; */
+}
+.contact form {
+  overflow: hidden;
+  background-image: linear-gradient(
+      105deg,
+      rgba(0, 0, 0, 0.523) 0%,
+      rgba(0, 0, 0, 0.523) 50%,
+      transparent 50%
+    ),
+    url(../../assets/19362652.jpg);
+  width: 80%;
+  height: 80%;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  transform: translate(-50%, -50%);
+}
+.form-container input,
+label,
+textarea {
+  display: block;
+  width: 70%;
+  margin: 1rem auto;
+}
+.form-container button {
+  display: block;
+  width: 30%;
+  margin: 1rem auto;
+}
+.form-container input:first-child {
+  margin-top: 20%;
+}
+.form-container input {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 700;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(198, 40, 92, 0.8);
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+.form-container textarea {
+  resize: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 700;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(198, 40, 92, 0.8);
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.form-container label {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-left: 17.5%;
+  transition: all 0.5s;
+}
+.form-container input:placeholder-shown + label {
+  opacity: 0;
+  transform: translateY(-2rem);
+}
+
+.form-container input,
+textarea {
+  outline: none;
+}
+
+/* adding media queries  */
+
+@media (max-width: 1380px) {
+  .achievment {
+    overflow: hidden;
+    width: 98%;
+    display: block;
+  }
+  .achievment-description1 {
+    margin-top: 5%;
+    font-size: 2rem;
+    max-width: 90%;
+    line-height: 2rem;
+  }
+  .achievment-description2 {
+    margin-top: 5%;
+    font-size: 2rem;
+    max-width: 90%;
+    line-height: 2rem;
+    margin-left: 15%;
+  }
+  .achievment-description1 p {
+    overflow: hidden;
+    margin-right: 4.5rem;
+  }
+  .achievment-description2 p {
+    overflow: hidden;
+    margin-left: 2rem;
+  }
+
+  .achievment-gif1 {
+    transform: scale(1.1);
+  }
+  .achievment-gif2 {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1203px) {
+  .achievment-gif1 {
+    right: -6%;
+  }
+  .achievment-gif2 {
+    left: -6%;
+  }
+
+  .contact .form-container {
+    top: -8%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .achievment-gif1 img,
+  .achievment-gif2 img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .achievment-gif1 img {
+    top: 16%;
+  }
+  .achievment-gif2 img {
+    position: relative;
+    top: 1%;
+  }
+}
+@media (max-width: 834px) {
+  .achievment-gif1 {
+    right: -5.2%;
+  }
+  .achievment-gif2 {
+    left: -5.2%;
+  }
+}
+@media (max-width: 785px) {
+  .contact .form-container {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+  }
+}
+@media (max-width: 740px) {
+  .contact .form-container {
+    top: -3%;
+  }
+}
+@media (max-width: 700px) {
+  .achievment-gif1 img,
+  .achievment-gif2 img {
+    width: 55%;
+    height: 55%;
+    object-fit: contain;
+  }
+  .achievment-gif1 img {
+    top: 25%;
+  }
+  .achievment-gif2 img {
+    position: relative;
+    top: 17%;
+  }
+}
+
+@media (max-width: 576px) {
+  .achievment-gif1 {
+    right: -4.3%;
+  }
+  .achievment-gif2 {
+    left: -4.3%;
+  }
+}
+
+@media (max-width: 530px) {
+  .achievment {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .achievment-gif1,
+  .achievment-gif2 {
+    position: static;
+  }
+  .achievment-description1,
+  .achievment-description2 {
+    margin: 0;
+    text-align: center;
+  }
+  .achievment-description1 p,
+  .achievment-description2 p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}

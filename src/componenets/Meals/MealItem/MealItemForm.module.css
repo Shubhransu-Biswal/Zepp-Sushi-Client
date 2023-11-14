@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput label {
+  display: none;
+}
+.formInput input {
+  width: 15%;
+  margin: 0 auto;
+}
+
+.form button {
+  overflow: hidden;
+  z-index: 9999;
+  position: absolute;
+  /* width: 10%; */
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 6px;
+  height: 3.4rem;
+  left: 54%;
+  color: inherit;
+  background-color: rgba(198, 40, 60, 1);
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: black;
+}
+
+@media (max-width: 1000px) {
+  .formInput input {
+    width: 23%;
+  }
+}
+@media (max-width: 680px) {
+  .formInput input {
+    width: 29%;
+  }
+}
+
+@media (max-width: 450px) {
+  .form button {
+    padding: 0 0.5rem;
+    height: 3.6rem;
+  }
+}

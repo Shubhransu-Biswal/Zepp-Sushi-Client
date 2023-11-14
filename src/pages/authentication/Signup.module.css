@@ -1,0 +1,86 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      217deg,
+      rgba(198, 40, 60, 0.8),
+      rgba(0, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(198, 40, 123, 0.8), rgba(0, 0, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(198, 40, 92, 0.8), rgba(0, 0, 0, 0) 70.71%);
+}
+.secondarybg {
+  width: 70%;
+  height: 60%;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(to right, transparent 50%, pink 50%, pink 100%),
+    url("../../assets//logBack.jpg");
+}
+.signupForm {
+  background-color: rgba(255, 255, 255, 0.279);
+
+  backdrop-filter: blur(1rem);
+  /* border: 1px solid #e1e1e1; */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 35rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.signupForm input {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.614);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  margin: 1rem 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.signupForm button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+.signupForm button:hover {
+  background-color: #007bffc3;
+}
+
+.signupForm h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.signupForm p {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.switchLink {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.switchLink:hover {
+  text-decoration: underline;
+}
