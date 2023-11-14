@@ -43,6 +43,7 @@ const HeaderBtn = (props) => {
     }
     if (!runOnce) return;
     getMyCart();
+    // eslint-disable-next-line
     runOnce = false;
   }, []);
 
